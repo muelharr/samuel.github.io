@@ -1,3 +1,3 @@
 Nama : Samuel Harry Priatno Lumbantoruan
 NPM  : 714240020
-Jurusan : D4 Teknik Informatika 1B # Samuel.github.io
+Jurusan : D4 Teknik Informatika 1B # SamuelHarry.github.io
