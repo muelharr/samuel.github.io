@@ -4,9 +4,9 @@ body {
     animation: fadeIn 1.5s ease-in-out;
 }
 
-@keytframes fadein {
-    form { opacity: 0; }
-    to { opacity: 1; }
+@keyframes fadeIn {
+    from {opacity: 0; }
+    to {opacity: 1; }
 }
 
 .card {
@@ -21,7 +21,7 @@ body {
 
 .card-footer a {
     margin: 0 10px;
-    transition: transform 0.3s ease, color 0,3s ease;
+    transition: transform 0.3s ease, color 0.3 ease;
 }
 
 .card-footer a:hover {
@@ -29,34 +29,3 @@ body {
     color: #007bff !important;
 }
 
-.progress-bar {
-    background-color: linear-gradient(to right, #ff758c, #ff3eb3);
-
-}
-.profile-img {
-    transition: transform 0.3s ease-in-out;
-}
-
-.profile-img:hover {
-    transform: scale(1.05);
-}
-
-.project-card img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.project-card img:hover {
-    transform: scale(1.05);
-}
-
-.container{
-    max-width: 500px;
-}
-
-@media (max-width: 768px) {
-    .profile-img {
-        width: 75% !important;
-    }
-}
