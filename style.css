@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #434f6e, #ad7878); /* Gradasi warna biru dan ungu */
+    background: linear-gradient(135deg, #434f6e, #ad7878);
     color: #333;
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ p {
 /* Container */
 .container {
     max-width: 1100px;
-    backdrop-filter: blur(10px); /* Blur membuat tampilan lebih premium */
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 20px;
 }
@@ -124,7 +124,7 @@ p {
 .social-icons a {
     font-size: 1.5rem;
     margin: 0 10px;
-    color: #000; /* Semua icon jadi hitam */
+    color: #000;
     transition: 0.3s;
 }
 
@@ -165,7 +165,7 @@ p {
 /* Contact Info */
 .contact-info {
     font-size: 1.1rem;
-    color: #000; /* Pastikan teks tetap hitam */
+    color: #000;
 }
 
 .contact-info i {
