@@ -1,113 +1,141 @@
 body {
-    background: linear-gradient(to right, #a0e25e, #32a032);
     font-family: 'Poppins', sans-serif;
-    animation: fadeIn 1.5s ease-in-out;
+    background: linear-gradient(to right, #f0f2f5, #cfd9df); /* Gradien latar belakang */
+    color: #000; /* Semua teks warna hitam */
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0; }
-    to {opacity: 1; }
+/* Container */
+.container {
+    max-width: 1100px;
 }
 
-.card {
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #007bff 30%, #343a40 100%);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover {
-    transform: translateX(-5px);
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.card-footer a {
-    margin: 0 10px;
-    transition: transform 0.3s ease, color 0.3 ease;
+.hero-section p {
+    font-size: 1.2rem;
+    opacity: 0.9;
 }
 
-.card-footer a:hover {
-    transform: scale(1.3);
-    color: #007bff !important;
-}
-
-.progress-bar {
-    background-color: linear-gradient(to right, #ff578c, #ff3eb3);
-}
-
+/* Profile Image */
 .profile-img {
-    transition: transform 0.3s ease-in-out;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.profile-img:hover {
-    transform: scale(1.05);
+/* Card Styles */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
+.card-header {
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 1.5rem;
+    margin: 0 10px;
+    color: #000; /* Semua icon jadi hitam */
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+/* Portfolio Images */
 .project-card img {
     width: 100%;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card img:hover {
     transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.container {
-    max-width: 500px;
+/* Contact Card */
+.contact-card {
+    border-radius: 12px;
+    background: linear-gradient(to right, #ffffff, #e3e7eb);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.bg-parallax {
-    background: linear-gradient(to right, #ff7eb3, #ff4d94);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-attachment: fixed;
-}
-
-.card:hover {
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+.contact-card:hover {
     transform: translateY(-5px);
-    transition: 0.3s ease-in-out;
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-.card-footer a:hover {
-    color: #ff7eb3 !important;
-    text-shadow: 0 0 10px rgba(255, 126, 179, 0.8);
-    transform: scale(1.2);
-    transition: 0.3s;
+.contact-card .card-header {
+    background: #222;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px 12px 0 0;
 }
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0,6s ease-out;
+/* Contact Info */
+.contact-info {
+    font-size: 1.1rem;
+    color: #000; /* Pastikan teks tetap hitam */
 }
 
-.show {
-    opacity: 1;
-    transform: translateY(0);
+.contact-info i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+    color: #000;
 }
 
+/* Footer */
 .footer {
-    background-color: #222;
-    color: #fff;
+    background: linear-gradient(to right, #222, #444);
+    color: white;
     text-align: center;
     padding: 20px 0;
     margin-top: 30px;
-}
-
-.footer a {
-    color: #ff79c6;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer a:hover {
-    text-decoration: underline;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
 }
 
 @media (max-width: 768px) {
-    .profile-img {
-        width: 75% !important;
+    .hero-section {
+        padding: 50px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .contact-card {
+        text-align: center;
     }
 }
