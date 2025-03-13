@@ -40,6 +40,17 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Programming Skills */
+.card-body i {
+    font-size: 3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card-body i:hover {
+    transform: scale(1.2);
+    color: #000; /* Warna hitam saat hover */
+}
+
 /* Card Styles */
 .card {
     border-radius: 12px;
