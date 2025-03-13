@@ -1,19 +1,28 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #f0f2f5, #cfd9df); /* Gradien latar belakang */
-    color: #000; /* Semua teks warna hitam */
+    background: linear-gradient(135deg, #434f6e, #ad7878); /* Gradasi warna biru dan ungu */
+    color: #333;
     margin: 0;
     padding: 0;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-weight: 200;
 }
 
 /* Container */
 .container {
     max-width: 1100px;
+    backdrop-filter: blur(10px); /* Blur membuat tampilan lebih premium */
+    border-radius: 15px;
+    padding: 20px;
 }
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #007bff 30%, #343a40 100%);
+    background: linear-gradient(135deg, #007bff 30%, #1e4872 100%);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -41,15 +50,61 @@ body {
 }
 
 /* Programming Skills */
-.card-body i {
-    font-size: 3rem;
-    transition: transform 0.3s ease, color 0.3s ease;
+.skill-card {
+    background: linear-gradient(135deg, #111111, #393c3f);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
 
-.card-body i:hover {
-    transform: scale(1.2);
-    color: #000; /* Warna hitam saat hover */
+.skill-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.15);
 }
+
+.icon-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-card img {
+    width: 80px;
+    height: auto;
+}
+
+.skill-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 10px 0;
+}
+
+.skill-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #f1c40f;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.skill-card a:hover {
+    color: #f39c12;
+    text-decoration: underline;
+}
+
 
 /* Card Styles */
 .card {
@@ -102,8 +157,6 @@ body {
 }
 
 .contact-card .card-header {
-    background: #222;
-    color: white;
     font-size: 1.2rem;
     font-weight: bold;
     border-radius: 12px 12px 0 0;
@@ -123,7 +176,7 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(to right, #222, #444);
+    background: linear-gradient(to right, #222, #2e2b2b);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -131,6 +184,10 @@ body {
     border-radius: 10px;
     font-weight: bold;
     letter-spacing: 0.5px;
+}
+
+.foot-p {
+    color: white;
 }
 
 @media (max-width: 768px) {
