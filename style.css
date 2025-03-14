@@ -22,7 +22,7 @@ p {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #007bff 30%, #1e4872 100%);
+    background: linear-gradient(135deg, #19191a 30%, #3b72a8 100%);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -134,7 +134,8 @@ p {
 
 /* Portfolio Images */
 .project-card img {
-    width: 100%;
+    width: 400px;
+    height: 194px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
