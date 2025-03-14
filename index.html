@@ -80,11 +80,11 @@
                   </div>
                   <div class="col-md-6 project-card">
                       <img src="project2.png" alt="Project 2">
-                      <p class="text-center mt-2">HAVENAGEN</p>
+                      <p class="text-center mt-2">Website HAVENAGEN</p>
                   </div>
                   <div class="col-md-6 project-card">
                     <img src="project3.png" alt="Project 3">
-                    <p class="text-center mt-2">Game dari Greenfoot</p>
+                    <p class="text-center mt-2">Game Greenfoot</p>
                 </div>
               </div>
           </div>
@@ -109,31 +109,33 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-   const text = "I'm a Web Developer & Programmer";
-        const typingText = document.getElementById("typing-text");
-        let index = 0;
-        let isDeleting = false;
+  document.addEventListener("DOMContentLoaded", function () {
+    const text = "I'm a Web Developer & Programmer";
+    const typingText = document.getElementById("typing-text");
+    let index = 0;
+    let isDeleting = false;
 
-        function typeEffect() {
-            if (!isDeleting) {
-                typingText.innerText = text.slice(0, index);
-                index++;
-                if (index > text.length) {
-                    setTimeout(() => isDeleting = true, 1000);
-                }
-            } else {
-                typingText.innerText = text.slice(0, index);
-                index--;
-                if (index < 0) {
-                    isDeleting = false; 
-                }
+    function typeEffect() {
+        if (!isDeleting) {
+            typingText.innerText = text.slice(0, index) + "|";
+            index++;
+            if (index > text.length) {
+                setTimeout(() => isDeleting = true, 1000); // Jeda sebelum hapus
             }
-            setTimeout(typeEffect, isDeleting ? 50 : 100); 
+        } else {
+            typingText.innerText = text.slice(0, index) + "|";
+            index--;
+            if (index < 0) {
+                isDeleting = false;
+            }
         }
 
-        window.onload = () => {
-            typeEffect();
-        };
+        setTimeout(typeEffect, isDeleting ? 50 : 100); // Kecepatan mengetik & hapus
+    }
+
+    typeEffect();
+});
+
   </script>
 
 </body>
