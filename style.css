@@ -12,6 +12,19 @@ p {
     font-weight: 200;
 }
 
+.fade-text {
+    display: inline-block;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+}
+
+@keyframes slideOut {
+    0% { width: 100%; opacity: 1;}
+    100% { width: 0; opacity: 0;}
+}
+
 /* Container */
 .container {
     max-width: 1100px;
