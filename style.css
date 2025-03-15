@@ -10,19 +10,6 @@ body {
     padding: 0;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(26, 26, 26, 0.9);
-    padding: 15px 20px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 p {
     font-family: 'Poppins', sans-serif;
     color: #000;
@@ -250,11 +237,6 @@ button:hover, .social-icons a:hover {
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        padding: 10px 15px;
-        flex-direction: column;
-    }
-
     .hero-section {
         padding-top: 100px;
     }
@@ -266,6 +248,14 @@ button:hover, .social-icons a:hover {
     .hero-section p {
         font-size: 1rem;
     }
+    
+    .card {
+        max-width: 93%;
+    }
+
+    .project-card img {
+        max-width: 90%;
+    }
 
     .container {
         padding: 15px;
@@ -274,5 +264,17 @@ button:hover, .social-icons a:hover {
     .profile-img {
         width: 120px;
         height: 120px;
+    }
+
+    .contact-card {
+        padding: 15px;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 12px;
     }
 }
