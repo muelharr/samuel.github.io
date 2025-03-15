@@ -18,6 +18,9 @@ body {
     background: rgba(26, 26, 26, 0.9);
     padding: 15px 20px;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 p {
@@ -62,16 +65,14 @@ p {
 /* Hero Section */
 .hero-section {
     background: linear-gradient(135deg, #19191a 30%, #3b72a8 100%);
-    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     height: 100vh;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: white;
 }
 
 .hero-section h1 {
@@ -249,8 +250,13 @@ button:hover, .social-icons a:hover {
 }
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+        flex-direction: column;
+    }
+
     .hero-section {
-        padding: 50px 20px;
+        padding-top: 100px;
     }
 
     .hero-section h1 {
@@ -261,7 +267,12 @@ button:hover, .social-icons a:hover {
         font-size: 1rem;
     }
 
-    .contact-card {
-        text-align: center;
+    .container {
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
     }
 }
