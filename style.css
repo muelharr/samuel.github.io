@@ -71,7 +71,7 @@ p {
 }
 
 .hero-section p {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     opacity: 0.9;
 }
 
@@ -222,13 +222,13 @@ button:hover, .social-icons a:hover, .skill-card:hover {
 
 /* Contact Info */
 .contact-info {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #000;
 }
 
 .contact-info i {
     margin-right: 10px;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #000;
 }
 
