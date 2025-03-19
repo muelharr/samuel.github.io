@@ -24,3 +24,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect();
 });
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        gsap.to(window, { duration: 1.5, scrollTo: this.getAttribute("href"), ease: "power2.inOut" });
+    });
+});
